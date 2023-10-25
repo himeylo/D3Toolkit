@@ -1,6 +1,6 @@
-# D3.js Zoomable Circle Packing
+# D3 Toolkit WP Plugin
 
-![Main](https://github.com/himeylo/D3Toolkit/workflows/Main/badge.svg)
+![GitHub top language](https://img.shields.io/github/languages/top/himeylo/D3Toolkit) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/himeylo/D3Toolkit)<!-- ![Main](https://github.com/himeylo/D3Toolkit/workflows/Main/badge.svg) -->
 
 WordPress data visualization toolkit using D3.js data visualization, Select2 filtering, and WP custom post types and taxonomies. Sets up custom post types for strategies, indicators, and tools, and taxonomy terms for `objectives`, lifecycle `phases`, project `themes`, `who` is involved, and indicator `types`. Complements any Genesis child theme to display `strategy`, `indicator`, and `tool` details in single and interactive circle packing data visualization archive views with filtering by associated taxonomy terms.
 
