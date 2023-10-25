@@ -1,10 +1,11 @@
 <?php
 
 /**
- * TTI_Strategies_Widget class.
- * Generates the TTI Strategies Featured Strategy Widget.
+ * D3Toolkit_Widget class.
+ * Generates the D3 Toolkit WP Plugin Featured Strategy Widget.
  */
-class TTI_Strategies_Widget extends WP_Widget {
+class D3Toolkit_Widget extends WP_Widget
+{
 
 	/**
 	 * Holds widget settings defaults, populated in constructor.
@@ -18,7 +19,8 @@ class TTI_Strategies_Widget extends WP_Widget {
 	 *
 	 * @since 0.1.8
 	 */
-	function __construct() {
+	function __construct()
+	{
 
 		$this->defaults = array(
 			'title'              => '',
@@ -26,18 +28,18 @@ class TTI_Strategies_Widget extends WP_Widget {
 			'strategy_id'        => '',
 			'show_image'         => 0,
 			'image_alignment'    => '',
-			'image_size'         => 'tti-strategy-image',
+			'image_size'         => 'd3-toolkit-image',
 			'show_featured_text' => '',
 			'show_title'         => 0,
 			'show_content'       => 0,
 			'content_limit'      => '',
 			'show_price'         => '',
-			'more_text'          => __( 'View Strategy', 'd3js-circle-packing' ),
+			'more_text'          => __('View Strategy', 'd3-toolkit'),
 		);
 
 		$widget_ops = array(
 			'classname'   => 'featured-content featuredpage featuredstrategy',
-			'description' => __( 'Displays a single strategy with several customizable display options.', 'd3js-circle-packing' ),
+			'description' => __('Displays a single strategy with several customizable display options.', 'd3-toolkit'),
 		);
 
 		$control_ops = array(
@@ -46,12 +48,11 @@ class TTI_Strategies_Widget extends WP_Widget {
 			'height'  => 250,
 		);
 
-		parent::__construct( 'featured-strategy', __( 'TTI Strategies - Featured Strategy', 'd3js-circle-packing' ), $widget_ops, $control_ops );
-		
-		add_action( 'wp_enqueue_scripts', array( &$this, 'enqueue_scripts') );
+		parent::__construct('featured-strategy', __('D3 Toolkit WP Plugin - Featured Strategy', 'd3-toolkit'), $widget_ops, $control_ops);
 
+		add_action('wp_enqueue_scripts', array(&$this, 'enqueue_scripts'));
 	}
-	
+
 	/**
 	 * Action added on the wp_enqueue_scripts hook.
 	 * Loads the objective stylesheet if the widget is active and the default styles are not being overridden.
@@ -59,18 +60,18 @@ class TTI_Strategies_Widget extends WP_Widget {
 	 * @access public
 	 * @return void
 	 */
-	function enqueue_scripts(){
-	
-		if( apply_filters( 'tti_strategies_load_default_styles', true ) && is_active_widget( false, false, $this->id_base, true ) ) {
-			
-			wp_enqueue_style( 'd3js-circle-packing',
-				TTI_STRATEGIES_RESOURCES_URL . 'css/style.css',
+	function enqueue_scripts()
+	{
+
+		if (apply_filters('d3toolkit_load_default_styles', true) && is_active_widget(false, false, $this->id_base, true)) {
+
+			wp_enqueue_style(
+				'd3-toolkit',
+				D3TOOLKIT_RESOURCES_URL . 'css/style.css',
 				array(),
-				TTI_PLUGIN_VERSION
+				D3TOOLS_PLUGIN_VERSION
 			);
-			
-		}           
-	
+		}
 	}
 
 	/**
@@ -84,13 +85,13 @@ class TTI_Strategies_Widget extends WP_Widget {
 	 * @param array $args Display arguments including before_title, after_title, before_widget, and after_widget.
 	 * @param array $instance The settings for the particular instance of the widget
 	 */
-	function widget( $args, $instance ) {
+	function widget($args, $instance)
+	{
 
 		//* Merge with defaults
-		$instance = wp_parse_args( (array) $instance, $this->defaults );
+		$instance = wp_parse_args((array) $instance, $this->defaults);
 
-		new TTI_Strategies_Widget_Output( $args, $instance, $this );
-
+		new D3Toolkit_Widget_Output($args, $instance, $this);
 	}
 
 	/**
@@ -106,12 +107,12 @@ class TTI_Strategies_Widget extends WP_Widget {
 	 * @param array $old_instance Old settings for this instance
 	 * @return array Settings to save or bool false to cancel saving
 	 */
-	function update( $new_instance, $old_instance ) {
+	function update($new_instance, $old_instance)
+	{
 
-		$new_instance['title']     = strip_tags( $new_instance['title'] );
-		$new_instance['more_text'] = strip_tags( $new_instance['more_text'] );
+		$new_instance['title']     = strip_tags($new_instance['title']);
+		$new_instance['more_text'] = strip_tags($new_instance['more_text']);
 		return $new_instance;
-
 	}
 
 	/**
@@ -121,13 +122,12 @@ class TTI_Strategies_Widget extends WP_Widget {
 	 *
 	 * @param array $instance Current settings
 	 */
-	function form( $instance ) {
+	function form($instance)
+	{
 
 		//* Merge with defaults
-		$instance = wp_parse_args( (array) $instance, $this->defaults );
+		$instance = wp_parse_args((array) $instance, $this->defaults);
 
-		new TTI_Strategies_Widget_Admin( $instance, $this );
-
+		new D3Toolkit_Widget_Admin($instance, $this);
 	}
-
 }

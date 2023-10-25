@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Creates the Strategy metaboxes. Uses Advanced Custom Fields.
  *
@@ -16,15 +17,17 @@
  * @since 0.1.0
  * @return void
  */
-class TTI_Strategies_Metabox {
+class D3Toolkit_Metabox
+{
 
 	/**
 	 * Construct the class.
 	 */
-	public function __construct() {
+	public function __construct()
+	{
 
 		// Register Field Groups.
-		if( function_exists('acf_add_local_field_group') ):
+		if (function_exists('acf_add_local_field_group')) :
 
 			acf_add_local_field_group(array(
 				'key' => 'group_571aa47247e08',
@@ -263,9 +266,7 @@ class TTI_Strategies_Metabox {
 				'description' => '',
 				'show_in_rest' => true,
 			));
-			
-			endif;
 
+		endif;
 	}
-
 }

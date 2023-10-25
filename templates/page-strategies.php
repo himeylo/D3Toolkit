@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template Name: Smart data Framework
  *
@@ -8,69 +9,74 @@
  * @ link http://my.studipress.com/themes/genesis
  */
 
-add_filter( 'body_class', 'data_bubbles_add_body_class' );
-function data_bubbles_add_body_class( $classes ) {
+add_filter('body_class', 'data_bubbles_add_body_class');
+function data_bubbles_add_body_class($classes)
+{
 
 	$classes[] = 'd3tool';
 
 	return $classes;
-
 }
 
-add_filter( 'genesis_attr_content', 'd3js_data_id_attributes_data_content' );
-function d3js_data_id_attributes_data_content( $attributes ) {
-		$attributes['id'] = 'top';
-		return $attributes;
+add_filter('genesis_attr_content', 'd3js_data_id_attributes_data_content');
+function d3js_data_id_attributes_data_content($attributes)
+{
+	$attributes['id'] = 'top';
+	return $attributes;
 }
 
-add_filter( 'genesis_attr_content', 'data_bubbles_attributes' );
-function data_bubbles_attributes( $attributes ) {
-		$attributes['id'] = 'data-relationships';
-		$attributes['class'] .= ' data-relationships toolkit-item-relationships';
-		return $attributes;
+add_filter('genesis_attr_content', 'data_bubbles_attributes');
+function data_bubbles_attributes($attributes)
+{
+	$attributes['id'] = 'data-relationships';
+	$attributes['class'] .= ' data-relationships toolkit-item-relationships';
+	return $attributes;
 }
 
 //* Add d3js_data body class to the head
-add_filter( 'body_class', 'd3js_data_add_body_class'   );
-add_filter( 'post_class' , 'd3js_data_custom_post_class' );
-add_action( 'wp_enqueue_scripts', 'd3js_data_load_default_styles' );
+add_filter('body_class', 'd3js_data_add_body_class');
+add_filter('post_class', 'd3js_data_custom_post_class');
+add_action('wp_enqueue_scripts', 'd3js_data_load_default_styles');
 
 /* Full Width */
-add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_content' );
+add_filter('genesis_pre_get_option_site_layout', '__genesis_return_full_width_content');
 
 /**
  * Enqueue styles for framework app.
  */
-function d3js_enqueue_data_relationships_styles() {
-	wp_enqueue_style( 'genericons', '/wp-content/plugins/jetpack/_inc/genericons/genericons/genericons.css', d3js_PLUGIN_VERSION, false );
-	wp_enqueue_style( 'select2-framework', d3js_data_FRAMEWORK_DIR . 'bower_components/select2/dist/css/select2.min.css', d3js_PLUGIN_VERSION, false );
-	wp_enqueue_style( 'framework-data-style', d3js_data_FRAMEWORK_DIR . 'build/app.css', d3js_PLUGIN_VERSION, false );
-	wp_enqueue_style( 'data-fonts', 'https://use.typekit.net/asf8jgz.css' );
+function d3js_enqueue_data_relationships_styles()
+{
+	wp_enqueue_style('genericons', '/wp-content/plugins/jetpack/_inc/genericons/genericons/genericons.css', d3js_PLUGIN_VERSION, false);
+	wp_enqueue_style('select2-framework', d3js_data_FRAMEWORK_DIR . 'bower_components/select2/dist/css/select2.min.css', d3js_PLUGIN_VERSION, false);
+	wp_enqueue_style('framework-data-style', d3js_data_FRAMEWORK_DIR . 'build/app.css', d3js_PLUGIN_VERSION, false);
+	wp_enqueue_style('data-fonts', 'https://use.typekit.net/asf8jgz.css');
 }
-add_action( 'wp_enqueue_scripts', 'd3js_enqueue_data_relationships_styles' );
+add_action('wp_enqueue_scripts', 'd3js_enqueue_data_relationships_styles');
 
 /**
  * Enqueue scripts specific for the framework data app
  */
-function d3js_enqueue_data_relationships_scripts() {
-	wp_enqueue_script( 'd3-framework', d3js_data_FRAMEWORK_DIR . 'bower_components/d3/d3.min.js', array( 'jquery' ), d3js_PLUGIN_VERSION, false );
-	wp_enqueue_script( 'select2-framework', d3js_data_FRAMEWORK_DIR . 'bower_components/select2/dist/js/select2.min.js', array( 'jquery' ), d3js_PLUGIN_VERSION, false );
-	wp_enqueue_script( 'framework-data-script', d3js_data_RELATIONSHIP_DIR . 'build/data-relationships.js', array( 'jquery' ), d3js_PLUGIN_VERSION, true );
+function d3js_enqueue_data_relationships_scripts()
+{
+	wp_enqueue_script('d3-framework', d3js_data_FRAMEWORK_DIR . 'bower_components/d3/d3.min.js', array('jquery'), d3js_PLUGIN_VERSION, false);
+	wp_enqueue_script('select2-framework', d3js_data_FRAMEWORK_DIR . 'bower_components/select2/dist/js/select2.min.js', array('jquery'), d3js_PLUGIN_VERSION, false);
+	wp_enqueue_script('framework-data-script', d3js_data_RELATIONSHIP_DIR . 'build/data-relationships.js', array('jquery'), d3js_PLUGIN_VERSION, true);
 }
-add_action( 'wp_enqueue_scripts', 'd3js_enqueue_data_relationships_scripts' );
-add_action( 'wp_enqueue_style', 'd3js-circle-packing-css' );
-add_action( 'wp_enqueue_script', 'd3js-circle-packing-css' );
+add_action('wp_enqueue_scripts', 'd3js_enqueue_data_relationships_scripts');
+add_action('wp_enqueue_style', 'd3-toolkit-css');
+add_action('wp_enqueue_script', 'd3-toolkit-css');
 
 /* Relocates breadcrumbs */
-remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );
-add_action( 'genesis_before_entry', 'genesis_do_breadcrumbs' );
+remove_action('genesis_before_loop', 'genesis_do_breadcrumbs');
+add_action('genesis_before_entry', 'genesis_do_breadcrumbs');
 
 /* Remove standard loop */
 // remove_action( 'genesis_loop', 'genesis_do_loop' );
 
 /* Including browser notice because it was there before... may not be needed anymore */
-add_action( 'genesis_before_loop', 'browser_notice' );
-function browser_notice() {
+add_action('genesis_before_loop', 'browser_notice');
+function browser_notice()
+{
 ?>
 	<noscript>
 		<div class="browser-notice text-center">This site requires JavaScript to be enabled. Here are <a href="http://www.enable-javascript.com" target="_blank">instructions how to enable JavaScript in your web browser</a>.</div>
@@ -81,11 +87,12 @@ function browser_notice() {
 
 
 /* Add header, footer, sitewide styles and scripts */
-add_action( 'genesis_entry_header', 'genesis_do_post_title' );
-add_action( 'genesis_entry_content', 'genesis_do_post_content' );
+add_action('genesis_entry_header', 'genesis_do_post_title');
+add_action('genesis_entry_content', 'genesis_do_post_content');
 
-add_action( 'genesis_after_entry', 'd3js_data_bubbles', 12 );
-function d3js_data_bubbles() {
+add_action('genesis_after_entry', 'd3js_data_bubbles', 12);
+function d3js_data_bubbles()
+{
 ?>
 	<div id="chart-part" class="chart-part">
 		<div id="chart-filters" class="chart-filters">
@@ -95,7 +102,9 @@ function d3js_data_bubbles() {
 			</div>
 			<div id="filters" class="filters">
 				<div class="filter phase-filter">
-					<div class="filter-header"><h4>Select Lifecycle Phase(s)</h4></div>
+					<div class="filter-header">
+						<h4>Select Lifecycle Phase(s)</h4>
+					</div>
 					<div class="map-container" style="position: relative;">
 						<a href="#chart-part" class="policy-and-planning" id="policy-and-planning" title="Policy and Planning"></a>
 						<a href="#chart-part" class="project-development" id="project-development" title="Project Development"></a>
@@ -116,19 +125,35 @@ function d3js_data_bubbles() {
 					</ul>
 				</div>
 				<div class="filter theme-filter">
-					<div class="filter-header"><h4>Select data Theme(s)</h4></div>
+					<div class="filter-header">
+						<h4>Select data Theme(s)</h4>
+					</div>
 					<ul id="area" class="button-group group-transect">
-						<a href="#chart-part"><li data-value="sustainability" id="sustainability-button" class="button" role="button" aria-pressed="false">Sustainability</li></a>
-						<a href="#chart-part"><li data-value="smart-growth" id="smart-growth-button" class="button" role="button" aria-pressed="false">Smart Growth</li></a>
-						<a href="#chart-part"><li data-value="equity" id="equity-button" class="button" role="button" aria-pressed="false">Equity</li></a>
-						<a href="#chart-part"><li data-value="infrastructure-modification" id="infrastructure-modification-button" class="button" role="button" aria-pressed="false">Infrastructure Modification</li></a>
-						<a href="#chart-part"><li data-value="transportation-demand-management" id="transportation-demand-management-button" class="button" role="button" aria-pressed="false">Transportation Demand Management</li></a>
-						<a href="#chart-part"><li data-value="transportation-system-management" id="transportation-system-management-button" class="button" role="button" aria-pressed="false">Transportation System Management</li></a>
+						<a href="#chart-part">
+							<li data-value="sustainability" id="sustainability-button" class="button" role="button" aria-pressed="false">Sustainability</li>
+						</a>
+						<a href="#chart-part">
+							<li data-value="smart-growth" id="smart-growth-button" class="button" role="button" aria-pressed="false">Smart Growth</li>
+						</a>
+						<a href="#chart-part">
+							<li data-value="equity" id="equity-button" class="button" role="button" aria-pressed="false">Equity</li>
+						</a>
+						<a href="#chart-part">
+							<li data-value="infrastructure-modification" id="infrastructure-modification-button" class="button" role="button" aria-pressed="false">Infrastructure Modification</li>
+						</a>
+						<a href="#chart-part">
+							<li data-value="transportation-demand-management" id="transportation-demand-management-button" class="button" role="button" aria-pressed="false">Transportation Demand Management</li>
+						</a>
+						<a href="#chart-part">
+							<li data-value="transportation-system-management" id="transportation-system-management-button" class="button" role="button" aria-pressed="false">Transportation System Management</li>
+						</a>
 					</ul>
 				</div>
 				<div class="filter whos-involved-filter">
-					<div class="filter-header"><h4>Who's Involved?</h4></div>
-					<ul id="area"class="whos-involved-filter group-select">
+					<div class="filter-header">
+						<h4>Who's Involved?</h4>
+					</div>
+					<ul id="area" class="whos-involved-filter group-select">
 						<li data-value="automakers" id="automakers-button" class="button" role="button" aria-pressed="false">Automakers</li>
 						<li data-value="automobile-repair-shops" id="automobile-repair-shops-button" class="button" role="button" aria-pressed="false">Automobile repair shops</li>
 						<li data-value="car-owners" id="car-owners-button" class="button" role="button" aria-pressed="false">Car owners</li>

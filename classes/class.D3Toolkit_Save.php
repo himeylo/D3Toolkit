@@ -1,9 +1,10 @@
 <?php
 
 /**
- * TTI_Strategies_Save class.
+ * D3Toolkit_Save class.
  */
-class TTI_Strategies_Save {
+class D3Toolkit_Save
+{
 
 	/**
 	 * The post ID of the entry currently being saved
@@ -34,15 +35,15 @@ class TTI_Strategies_Save {
 	 * The prefix key used to update the meta data.
 	 * This key should also contain the posted strategy meta data.
 	 *
-	 * (default value: '_tti_strategies')
+	 * (default value: '_d3-toolkit')
 	 *
 	 * @var string
 	 * @access private
 	 */
-	private $_prefix = '_tti_strategies';
+	private $_prefix = '_d3-toolkit';
 
 	/**
-	 * Constuctor method for the TTI_Strategies_Save class.
+	 * Constuctor method for the D3Toolkit_Save class.
 	 * Sets the initial values for the object $post_id, $post, and $_meta_data variables.
 	 * Calls the _sanitize_meta_data() and _update_meta_data() methods.
 	 *
@@ -51,9 +52,10 @@ class TTI_Strategies_Save {
 	 * @param object $post
 	 * @return void
 	 */
-	public function __construct( $post_id, $post ) {
+	public function __construct($post_id, $post)
+	{
 
-		if( empty( $_POST[$this->_prefix] ) ){
+		if (empty($_POST[$this->_prefix])) {
 			return;
 		}
 
@@ -63,7 +65,6 @@ class TTI_Strategies_Save {
 
 		$this->_sanitize_meta_data();
 		$this->_update_meta_data();
-
 	}
 
 	/**
@@ -72,28 +73,26 @@ class TTI_Strategies_Save {
 	 * @access private
 	 * @return void
 	 */
-	private function _sanitize_meta_data(){
+	private function _sanitize_meta_data()
+	{
 
-		foreach( $this->_meta_data as $key => $value ){
+		foreach ($this->_meta_data as $key => $value) {
 
-			switch( $key ){
+			switch ($key) {
 
-			case 'publication_date':
-				$this->_meta_data[$key] = $this->_sanitize_date( $value );
-				break;
+				case 'publication_date':
+					$this->_meta_data[$key] = $this->_sanitize_date($value);
+					break;
 
-			case ( false !== strpos( $key, '_uri' ) ):
-				$this->_meta_data[$key] = $this->_sanitize_uri( $value );
-				break;
+				case (false !== strpos($key, '_uri')):
+					$this->_meta_data[$key] = $this->_sanitize_uri($value);
+					break;
 
-			default:
-				$this->_meta_data[$key] = $this->_sanitize_html( $value );
-				break;
-
+				default:
+					$this->_meta_data[$key] = $this->_sanitize_html($value);
+					break;
 			}
-
 		}
-
 	}
 
 	/**
@@ -102,10 +101,10 @@ class TTI_Strategies_Save {
 	 * @access private
 	 * @return void
 	 */
-	private function _update_meta_data() {
+	private function _update_meta_data()
+	{
 
-		update_post_meta( $this->post_id, $this->_prefix, $this->_meta_data );
-
+		update_post_meta($this->post_id, $this->_prefix, $this->_meta_data);
 	}
 
 	/**
@@ -116,14 +115,14 @@ class TTI_Strategies_Save {
 	 * @param string $value
 	 * @return void
 	 */
-	private function _sanitize_date( $value ){
+	private function _sanitize_date($value)
+	{
 
-		if( $value ){
-			return strtotime( $value );
+		if ($value) {
+			return strtotime($value);
 		}
 
 		return '';
-
 	}
 
 	/**
@@ -133,10 +132,10 @@ class TTI_Strategies_Save {
 	 * @param string $value
 	 * @return void
 	 */
-	private function _sanitize_uri( $value ){
+	private function _sanitize_uri($value)
+	{
 
-		return esc_url( $value );
-
+		return esc_url($value);
 	}
 
 	/**
@@ -146,10 +145,9 @@ class TTI_Strategies_Save {
 	 * @param string $value
 	 * @return void
 	 */
-	private function _sanitize_html( $value ){
+	private function _sanitize_html($value)
+	{
 
-		return esc_html( $value );
-
+		return esc_html($value);
 	}
-
 }

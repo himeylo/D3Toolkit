@@ -1,149 +1,144 @@
 /* ## Archives
 --------------------------------------------- */
 
-.archive.d3js-circle-packing .content .entry {
-	background-image: none;
-	border-width: 0;	
-	float: left;
-	margin: 0 0 40px 2.5641025641026%;
-	padding: 15px;
-	text-align: center;
-	width: 31.623931623932%;
+.archive.d3-toolkit .content .entry {
+  background-image: none;
+  border-width: 0;
+  float: left;
+  margin: 0 0 40px 2.5641025641026%;
+  padding: 15px;
+  text-align: center;
+  width: 31.623931623932%;
 }
 
-.archive.d3js-circle-packing .content .entry:nth-of-type(3n+1) {
-	clear: both;
-	margin-left: 0;
+.archive.d3-toolkit .content .entry:nth-of-type(3n + 1) {
+  clear: both;
+  margin-left: 0;
 }
 
-.archive.d3js-circle-packing .content  .entry-header {
-	border-width: 0;
-	margin: 0;
-	padding: 0;
+.archive.d3-toolkit .content .entry-header {
+  border-width: 0;
+  margin: 0;
+  padding: 0;
 }
 
-.archive.d3js-circle-packing .content .entry-header .entry-title {
-	border-width: 0;
-	font-size: 20px;
-	margin-left: auto;
-	padding: 0;
-	word-wrap: break-word;
+.archive.d3-toolkit .content .entry-header .entry-title {
+  border-width: 0;
+  font-size: 20px;
+  margin-left: auto;
+  padding: 0;
+  word-wrap: break-word;
 }
 
-.d3js-circle-packing .archive-pagination {
-    clear: both;
+.d3-toolkit .archive-pagination {
+  clear: both;
 }
 
 /* ## Strategy Image
 --------------------------------------------- */
 
-.archive.d3js-circle-packing .tti-strategy-featured-image,
-.tti-strategy-featured-image a,
-.single-strategies .tti-strategy-featured-image {
-    display: inline-block;
-    max-width: 100%;
-    overflow: hidden;
-    position: relative;
+.archive.d3-toolkit .d3-toolkit-featured-image,
+.d3-toolkit-featured-image a,
+.single-strategies .d3-toolkit-featured-image {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
-.tti-strategy-featured-image.image-aligncenter {
-    text-align: center;
+.d3-toolkit-featured-image.image-aligncenter {
+  text-align: center;
 }
 
-.archive.d3js-circle-packing .tti-strategy-featured-image img,
-.single-strategies .tti-strategy-featured-image img {
-    margin: 0 auto 20px;
+.archive.d3-toolkit .d3-toolkit-featured-image img,
+.single-strategies .d3-toolkit-featured-image img {
+  margin: 0 auto 20px;
 }
 
 .strategy-featured-text-banner {
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    background-color: #000;
-    color: #fff;
-    font-size: 10px;
-    font-weight: 700;
-    padding: 6px 12px;
-    position: absolute;
-    right: -35px;
-    text-align: center;
-    text-transform: uppercase;
-    top: 30px;
-    width: 160px;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  background-color: #000;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 6px 12px;
+  position: absolute;
+  right: -35px;
+  text-align: center;
+  text-transform: uppercase;
+  top: 30px;
+  width: 160px;
 }
-
 
 /* ## Single Strategy Layout
 --------------------------------------------- */
 
-.d3js-circle-packing-strategy-description {
-	clear: none;
-	float: left;
+.d3-toolkit-strategy-description {
+  clear: none;
+  float: left;
 }
 
-.d3js-circle-packing-strategy-details {
-	float: right;
+.d3-toolkit-strategy-details {
+  float: right;
 }
-
 
 /* ## Strategy Details
 --------------------------------------------- */
 
 .strategy-by-line {
-	margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .strategy-details {
-	margin-bottom: 35px;
-	text-align: center;
+  margin-bottom: 35px;
+  text-align: center;
 }
 
 .strategy-featured-text-banner {
-	display: block;
-	text-align: center;
+  display: block;
+  text-align: center;
 }
 
 .single-strategies .strategy-price {
-	border-bottom: 2px solid #eee;
-	display: block;	
-	font-size: 30px;
-	margin: 0 0 26px;
-	padding: 0 0 26px;
+  border-bottom: 2px solid #eee;
+  display: block;
+  font-size: 30px;
+  margin: 0 0 26px;
+  padding: 0 0 26px;
 }
 
 .strategy-details-meta .label {
-	font-weight: 700;
+  font-weight: 700;
 }
 
 .strategy-details .button-strategy {
-	display: block;
-	margin: 10px auto;
-	text-align: center;
-	width: 100%;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  width: 100%;
 }
 
 .entry-content .strategy-details-meta,
 .entry-content .strategy-details-meta li {
-	list-style-type: none;
-	margin-left: 0;
-	text-align: left;
+  list-style-type: none;
+  margin-left: 0;
+  text-align: left;
 }
-
 
 /* ## Media Queries
 --------------------------------------------- */
 
 @media only screen and (max-width: 780px) {
+  .archive.d3-toolkit .content .entry {
+    margin-left: 0;
+    width: 100%;
+  }
 
-	.archive.d3js-circle-packing .content .entry {
-		margin-left: 0;
-		width: 100%;
-	}
-	
-	.d3js-circle-packing-strategy-details,
-	.d3js-circle-packing-strategy-description {
-		float: none;
-	}
-
+  .d3-toolkit-strategy-details,
+  .d3-toolkit-strategy-description {
+    float: none;
+  }
 }

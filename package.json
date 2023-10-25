@@ -1,10 +1,10 @@
 {
-  "name": "d3js-circle-packing",
+  "name": "d3-toolkit",
   "version": "1.0.0",
   "description": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ttitamu/d3js-circle-packing/"
+    "url": "https://github.com/himeylo/d3-toolkit/"
   },
   "main": "index.js",
   "engines": {
