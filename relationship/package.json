@@ -1,0 +1,27 @@
+{
+  "name": "policy-congestion",
+  "version": "1.0.0",
+  "description": "Policy Center congestion interactive tool",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-clean": "^0.7.0",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-uglify": "^0.11.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-sass": "^2.1.0",
+    "grunt-string-replace": "^1.2.1",
+    "include-all": "^0.1.6",
+    "load-grunt-tasks": "^3.4.0",
+    "node-sass": "^4.13.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.tamu.edu:TTI-KAC/policy-congestion.git"
+  }
+}

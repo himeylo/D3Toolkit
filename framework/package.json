@@ -1,0 +1,22 @@
+{
+  "name": "smart-framework",
+  "version": "1.0.0",
+  "description": "Carteeh Smart Framework interactive tool",
+  "devDependencies": {
+    "grunt": "^1.6.1",
+    "grunt-cli": "^1.4.3",
+    "grunt-contrib-clean": "^0.7.0",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-uglify": "^0.11.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-sass": "^3.1.0",
+    "grunt-string-replace": "^1.2.1",
+    "include-all": "^0.1.6",
+    "load-grunt-tasks": "^3.4.0",
+    "sass": "^1.64.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

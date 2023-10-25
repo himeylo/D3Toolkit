@@ -1,0 +1,38 @@
+var solutions = [],
+    solutionDiv = document.getElementById('solutions');
+
+var count = Strategies.data.length;
+
+// for (var i = 0; i < count; i++) {
+//   var div = document.createElement('div'),
+//       img = document.createElement('img'),
+//       textDiv = document.createElement('div'),
+//       titleSpan = document.createElement('span');
+
+//   // Container classes.
+//   div.setAttribute('class', 'solution item-' + i);
+
+//   // Image.
+//   img.setAttribute('src', 'http://placehold.it/250x250');
+//   img.setAttribute('class', 'image item-' + i);
+//   img.setAttribute('alt', Strategies.data[i].Strategy);
+//   img.setAttribute('title', Strategies.data[i].Strategy);
+
+//   // Title Container.
+//   textDiv.setAttribute('class', 'title-container item-' + i);
+//   textDiv.setAttribute('style', 'background-color: ' + Strategies.color(Strategies.data[i].Area));
+
+//   // Title
+//   var title = document.createTextNode(Strategies.data[i].Strategy);
+//   titleSpan.appendChild(title);
+//   titleSpan.setAttribute('class', 'title item-' + i);
+//   textDiv.appendChild(titleSpan);
+
+//   // Build div.
+//   div.appendChild(img);
+//   div.appendChild(textDiv);
+
+//   // Append and save for later use.
+//   solutionDiv.appendChild(div);
+//   solutions.push(div);
+// }

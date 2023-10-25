@@ -1,0 +1,306 @@
+<svg version="1.1" class="objchart" id="objchart" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 378.6 317"  style="enable-background:new 0 0 378.6 317;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#0D2E5A;}
+	.st1{fill:#134587;}
+	.st2{fill:#EAB840;}
+	.st3{fill:#EFC96E;}
+	.st4{fill:#99331C;}
+	.st5{fill:#C44124;}
+	.st6{fill:#E37A30;}
+	.st7{fill:#E9975D;}
+	.st8{fill:#577120;}
+	.st9{fill:#76992B;}
+	.st10{fill:#734136;}
+	.st11{fill:#965546;}
+	.st12{fill:#2967A1;}
+	.st13{fill:#3381CA;}
+	.st14{fill:#CA624D;}
+	.st15{fill:#D68574;}
+	.st16{display:none;}
+	.st17{display:inline;}
+	.st18{enable-background:new    ;}
+	.st19{font-family:'RobotoCondensed-Regular';}
+	.st20{font-size:51px;}
+	.st786{fill:#FFFFFF;}
+	.st787{font-family:'OpenSans-CondensedBold';}
+	.st788{font-size:16px;}
+	.st789{font-size:22px;}
+	.st790{font-size:18px;}
+	.st791{font-size:20px;}
+	.st792{fill:none;}
+</style>
+<rect x="189.3" y="158.5" width="0" height="0"/>
+<a xlink:href="/smart-strategy-framework"><circle id="less-emissions" class="st0" cx="304.9" cy="66.4" r="66.2"/></a>
+<circle id="choose-fuel-efficient-vehicles" class="st1" cx="296.8" cy="73.5" r="7.2"/>
+<circle id="reduce-vehicle-idling" class="st1" cx="313" cy="73.5" r="7.2"/>
+<circle id="introduce-congestion-charge" class="st1" cx="304.9" cy="59.4" r="7.2"/>
+<circle id="introduce-carbon-tax" class="st1" cx="288.6" cy="59.4" r="7.2"/>
+<circle id="establish-a-national-mileage-based-user-fee-system-mbuf-or-a-road-user-charge-ruc" class="st1" cx="280.5" cy="73.5" r="7.2"/>
+<circle id="carsharing" class="st1" cx="288.6" cy="87.5" r="7.2"/>
+<circle id="ridesharing" class="st1" cx="304.9" cy="87.5" r="7.2"/>
+<circle id="park-and-ride-facilities" class="st1" cx="321.1" cy="87.5" r="7.2"/>
+<circle id="parking-cash-out-program" class="st1" cx="329.2" cy="73.5" r="7.2"/>
+<circle id="introduce-low-or-zero-emission-zones" class="st1" cx="321.1" cy="59.4" r="7.2"/>
+<circle id="improve-road-traffic-flow" class="st1" cx="313" cy="45.3" r="7.2"/>
+<circle id="vehicle-inspection-and-maintenance-i-m-programs" class="st1" cx="296.8" cy="45.3" r="7.2"/>
+<circle id="encourage-remote-work-or-flexible-working-hours" class="st1" cx="280.5" cy="45.3" r="7.2"/>
+<circle id="encourage-transit-oriented-development" class="st1" cx="272.4" cy="59.4" r="7.2"/>
+<circle id="develop-and-increase-electrification-infrastructure" class="st1" cx="264.3" cy="73.5" r="7.2"/>
+<circle id="develop-and-increase-vegetation-barriers-green-walls-or-buffers" class="st1" cx="272.4" cy="87.5" r="7.2"/>
+<circle id="promote-bike-sharing" class="st1" cx="280.5" cy="101.6" r="7.2"/>
+<circle id="complete-streets" class="st1" cx="296.8" cy="101.6" r="7.2"/>
+<circle id="increasing-parking-charges" class="st1" cx="313" cy="101.6" r="7.2"/>
+<circle id="develop-and-increase-high-occupancy-vehicle-lanes" class="st1" cx="329.2" cy="101.6" r="7.2"/>
+<circle id="vehicle-emissions-regulations-and-standards" class="st1" cx="337.4" cy="87.5" r="7.2"/>
+<circle id="expand-public-transportation" class="st1" cx="345.5" cy="73.5" r="7.2"/>
+<circle id="clean-freight-and-retrofitting" class="st1" cx="337.4" cy="59.4" r="7.2"/>
+<circle id="expand-bicycle-and-pedestrian-infrastructure" class="st1" cx="329.2" cy="45.3" r="7.2"/>
+<circle id="modify-construction-practices" class="st1" cx="321.1" cy="31.3" r="7.2"/>
+<circle id="parking-guidance-systems" class="st1" cx="304.9" cy="31.3" r="7.2"/>
+<circle id="vehicle-restrictions" class="st1" cx="288.6" cy="31.3" r="7.2"/>
+<circle id="route-and-trip-planning-tools" class="st1" cx="272.4" cy="31.3" r="7.2"/>
+<circle id="urban-greening" class="st1" cx="264.3" cy="45.3" r="7.2"/>
+<circle id="redesign-and-repurpose-the-road-system" class="st1" cx="256.2" cy="59.4" r="7.2"/>
+<circle id="parking-standards-and-availability" class="st1" cx="248" cy="73.5" r="7.2"/>
+<circle id="vehicle-ownership-taxes" class="st1" cx="256.2" cy="87.5" r="7.2"/>
+<circle id="fleet-management-systems" class="st1" cx="264.3" cy="101.6" r="7.2"/>
+<circle id="promote-bicycle-culture-in-workplaces" class="st1" cx="272.4" cy="115.7" r="7.2"/>
+<circle id="compact-cities" class="st1" cx="288.6" cy="115.7" r="7.2"/>
+<circle id="trams-and-light-rail" class="st1" cx="304.9" cy="115.7" r="7.2"/>
+<circle id="traffic-calming-measures" class="st1" cx="321.1" cy="115.7" r="7.2"/>
+<circle id="road-maintenance" class="st1" cx="337.4" cy="115.7" r="7.2"/>
+<circle id="enhance-cycle-pedestrian-safety" class="st1" cx="345.5" cy="101.6" r="7.2"/>
+<circle id="vehicle-automation" class="st1" cx="353.6" cy="87.5" r="7.2"/>
+<circle id="lower-transit-fares" class="st1" cx="361.7" cy="73.5" r="7.2"/>
+<circle id="integrated-ticketing-systems" class="st1" cx="353.6" cy="59.4" r="7.2"/>
+<circle id="land-use-to-support-public-transit" class="st1" cx="345.5" cy="45.3" r="7.2"/>
+<circle id="safe-routes-to-school-programs" class="st1" cx="337.4" cy="31.3" r="7.2"/>
+<circle id="fuel-taxes" class="st1" cx="329.2" cy="17.2" r="7.2"/>
+<circle id="vehicle-maintenance-activities" class="st1" cx="313" cy="17.2" r="7.2"/>
+<a xlink:href="/smart-strategy-framework"><circle id="connectivity-and-inclusion" class="st2" cx="81.7" cy="212.7" r="56"/></a>
+<circle id="carsharing_00000052815727198945286630000011547389462426076042_" class="st3" cx="81.7" cy="212.7" r="7.2"/>
+<circle id="ridesharing_00000059303925394925339990000004064413352781276323_" class="st3" cx="98" cy="212.7" r="7.2"/>
+<circle id="park-and-ride-facilities_00000047050618614076242050000010979056787970908597_" class="st3" cx="89.9" cy="198.6" r="7.2"/>
+<circle id="improve-road-traffic-flow_00000107577177011801400520000008153947285684420238_" class="st3" cx="73.6" cy="198.6" r="7.2"/>
+<circle id="encourage-remote-work-or-flexible-working-hours_00000108279565771089143020000005689435825981538225_" class="st3" cx="65.5" cy="212.7" r="7.2"/>
+<circle id="encourage-transit-oriented-development_00000139261291690731507760000008533941111091353511_" class="st3" cx="73.6" cy="226.7" r="7.2"/>
+<circle id="promote-bike-sharing_00000042729449389282636650000017395083184609171617_" class="st3" cx="89.9" cy="226.7" r="7.2"/>
+<circle id="complete-streets_00000183229109337621089540000007395501062460670377_" class="st3" cx="106.1" cy="226.7" r="7.2"/>
+<circle id="develop-and-increase-high-occupancy-vehicle-lanes_00000026159403430455346060000007965801144951281329_" class="st3" cx="114.2" cy="212.7" r="7.2"/>
+<circle id="expand-public-transportation_00000104677727295976884140000018430162279514435995_" class="st3" cx="106.1" cy="198.6" r="7.2"/>
+<circle id="expand-bicycle-and-pedestrian-infrastructure_00000083090231677998823590000005734732681191882392_" class="st3" cx="98" cy="184.5" r="7.2"/>
+<circle id="parking-guidance-systems_00000145032613283654892560000007966736517618569874_" class="st3" cx="81.7" cy="184.5" r="7.2"/>
+<circle id="route-and-trip-planning-tools_00000020400141767190104490000014165942977792900997_" class="st3" cx="65.5" cy="184.5" r="7.2"/>
+<circle id="redesign-and-repurpose-the-road-system_00000110468152575195530340000002238242331063198899_" class="st3" cx="57.4" cy="198.6" r="7.2"/>
+<circle id="promote-bicycle-culture-in-workplaces_00000109742997542954165560000016952250307344241289_" class="st3" cx="49.3" cy="212.7" r="7.2"/>
+<circle id="compact-cities_00000182513236940573131190000000681010981362416062_" class="st3" cx="57.4" cy="226.7" r="7.2"/>
+<circle id="trams-and-light-rail_00000114031809813073929540000007864976670267972761_" class="st3" cx="65.5" cy="240.8" r="7.2"/>
+<circle id="road-maintenance_00000083807155064282324560000005715476393057382326_" class="st3" cx="81.7" cy="240.8" r="7.2"/>
+<circle id="enhance-cycle-pedestrian-safety_00000119800038645574025600000007069677281923341741_" class="st3" cx="98" cy="240.8" r="7.2"/>
+<circle id="vehicle-automation_00000083085325905384105480000008978768400771155084_" class="st3" cx="114.2" cy="240.8" r="7.2"/>
+<circle id="lower-transit-fares_00000060749499417285357760000017467414686801053575_" class="st3" cx="122.3" cy="226.7" r="7.2"/>
+<circle id="integrated-ticketing-systems_00000153679987979685614980000011981383140842018965_" class="st3" cx="130.5" cy="212.7" r="7.2"/>
+<circle id="land-use-to-support-public-transit_00000169537149538811494220000015547670118855948432_" class="st3" cx="122.3" cy="198.6" r="7.2"/>
+<circle id="safe-routes-to-school-programs_00000131328883692955717520000014148463313360294588_" class="st3" cx="114.2" cy="184.5" r="7.2"/>
+<circle id="developer-contributions" class="st3" cx="106.1" cy="170.5" r="7.2"/>
+<circle id="multimodal-access-to-transportation" class="st3" cx="89.9" cy="170.5" r="7.2"/>
+<circle id="rides-to-wellness-initiative-rtwi" class="st3" cx="73.6" cy="170.5" r="7.2"/>
+<circle id="fixed-route-shuttle-service" class="st3" cx="57.4" cy="170.5" r="7.2"/>
+<circle id="real-time-passenger-information-system" class="st3" cx="49.3" cy="184.5" r="7.2"/>
+<circle id="health-impact-assessments-hias" class="st3" cx="41.1" cy="198.6" r="7.2"/>
+<circle id="first-last-mile-infrastructure" class="st3" cx="33" cy="212.7" r="7.2"/>
+<circle id="public-transit-safety-improvements" class="st3" cx="41.1" cy="226.7" r="7.2"/>
+<circle id="presence-of-medians-or-midblock-crosswalks" class="st3" cx="49.3" cy="240.8" r="7.2"/>
+<circle id="edge-lane-roads-elrs" class="st3" cx="57.4" cy="254.9" r="7.2"/>
+<a xlink:href="/smart-strategy-framework"><circle id="healthy-destination" class="st4" cx="156.3" cy="55.1" r="55.1"/></a>
+<circle id="carsharing_00000154398860661167271900000003967289745810114488_" class="st5" cx="148.2" cy="62.1" r="7.2"/>
+<circle id="ridesharing_00000023242234329291354140000015818942990137583525_" class="st5" cx="164.4" cy="62.1" r="7.2"/>
+<circle id="park-and-ride-facilities_00000178920200507304681660000004644503715424578200_" class="st5" cx="156.3" cy="48.1" r="7.2"/>
+<circle id="encourage-transit-oriented-development_00000146460050165739069910000007007432194898549148_" class="st5" cx="140.1" cy="48.1" r="7.2"/>
+<circle id="promote-bike-sharing_00000122696901294317817480000018189292826976810394_" class="st5" cx="131.9" cy="62.1" r="7.2"/>
+<circle id="complete-streets_00000145752932676380336480000017783248028845246093_" class="st5" cx="140.1" cy="76.2" r="7.2"/>
+<circle id="develop-and-increase-high-occupancy-vehicle-lanes_00000172417105036459696020000012025936398693681841_" class="st5" cx="156.3" cy="76.2" r="7.2"/>
+<circle id="expand-public-transportation_00000171681097332560954200000002757583478592296597_" class="st5" cx="172.5" cy="76.2" r="7.2"/>
+<circle id="expand-bicycle-and-pedestrian-infrastructure_00000136384024786138895410000006871418729761523089_" class="st5" cx="180.7" cy="62.1" r="7.2"/>
+<circle id="parking-guidance-systems_00000183225441231478860500000003564131645716490907_" class="st5" cx="172.5" cy="48.1" r="7.2"/>
+<circle id="route-and-trip-planning-tools_00000139977912589638133810000009263219664406494379_" class="st5" cx="164.4" cy="34" r="7.2"/>
+<circle id="redesign-and-repurpose-the-road-system_00000178885766230552727900000003012446184937349803_" class="st5" cx="148.2" cy="34" r="7.2"/>
+<circle id="promote-bicycle-culture-in-workplaces_00000078741447891066702650000018107278354716242097_" class="st5" cx="131.9" cy="34" r="7.2"/>
+<circle id="compact-cities_00000103964071906649772860000012204378057188938129_" class="st5" cx="123.8" cy="48.1" r="7.2"/>
+<circle id="trams-and-light-rail_00000151544006943258383450000004004624092650728333_" class="st5" cx="115.7" cy="62.1" r="7.2"/>
+<circle id="vehicle-automation_00000054267843683952231350000008564476111307454613_" class="st5" cx="123.8" cy="76.2" r="7.2"/>
+<circle id="lower-transit-fares_00000132085647773743832570000004521842095863100039_" class="st5" cx="131.9" cy="90.3" r="7.2"/>
+<circle id="integrated-ticketing-systems_00000149369493812924072600000005134899027490706312_" class="st5" cx="148.2" cy="90.3" r="7.2"/>
+<circle id="land-use-to-support-public-transit_00000060732372628257150350000005535352811805809050_" class="st5" cx="164.4" cy="90.3" r="7.2"/>
+<circle id="developer-contributions_00000087401575326785576210000007239464905964043185_" class="st5" cx="180.7" cy="90.3" r="7.2"/>
+<circle id="multimodal-access-to-transportation_00000154403877920103330130000006687123174983715262_" class="st5" cx="188.8" cy="76.2" r="7.2"/>
+<circle id="rides-to-wellness-initiative-rtwi_00000090988878778094134440000001113980652732354966_" class="st5" cx="196.9" cy="62.1" r="7.2"/>
+<circle id="fixed-route-shuttle-service_00000171702142150853078230000007888933269825995657_" class="st5" cx="188.8" cy="48.1" r="7.2"/>
+<circle id="real-time-passenger-information-system_00000058568767148020690830000007624355378378827939_" class="st5" cx="180.7" cy="34" r="7.2"/>
+<circle id="health-impact-assessments-hias_00000114075876342245156100000009216522670500711585_" class="st5" cx="172.5" cy="19.9" r="7.2"/>
+<circle id="first-last-mile-infrastructure_00000065075032446464163660000010183715826194887598_" class="st5" cx="156.3" cy="19.9" r="7.2"/>
+<circle id="public-transit-safety-improvements_00000111158301100456092960000016269077429325477303_" class="st5" cx="140.1" cy="19.9" r="7.2"/>
+<circle id="presence-of-medians-or-midblock-crosswalks_00000126305331041421146190000009075037570289194933_" class="st5" cx="123.8" cy="19.9" r="7.2"/>
+<circle id="edge-lane-roads-elrs_00000050644836848884964280000013169175004299148169_" class="st5" cx="115.7" cy="34" r="7.2"/>
+<a xlink:href="/smart-strategy-framework"><circle id="active-transport" class="st6" cx="55.1" cy="103" r="55.1"/></a>
+<circle id="parking-cash-out-program_00000003785735121233343750000001229553289675046535_" class="st7" cx="47" cy="110.1" r="7.2"/>
+<circle id="encourage-transit-oriented-development_00000097497928734013520740000005492877353563033772_" class="st7" cx="63.2" cy="110.1" r="7.2"/>
+<circle id="promote-bike-sharing_00000031183036615149494480000004405203628325125765_" class="st7" cx="55.1" cy="96" r="7.2"/>
+<circle id="complete-streets_00000006700060305397464760000011152184874999571370_" class="st7" cx="38.9" cy="96" r="7.2"/>
+<circle id="increasing-parking-charges_00000003071779127646175240000002551135002819635887_" class="st7" cx="30.7" cy="110.1" r="7.2"/>
+<circle id="expand-public-transportation_00000009573306987369407080000005071938969330123688_" class="st7" cx="38.9" cy="124.1" r="7.2"/>
+<circle id="expand-bicycle-and-pedestrian-infrastructure_00000066488903835800755070000008055841562991864208_" class="st7" cx="55.1" cy="124.1" r="7.2"/>
+<circle id="vehicle-restrictions_00000148646758044449131260000009361211385811098526_" class="st7" cx="71.3" cy="124.1" r="7.2"/>
+<circle id="route-and-trip-planning-tools_00000122705065439833287850000016063281219913093249_" class="st7" cx="79.5" cy="110.1" r="7.2"/>
+<circle id="urban-greening_00000069367943783935387760000003108785241203485881_" class="st7" cx="71.3" cy="96" r="7.2"/>
+<circle id="redesign-and-repurpose-the-road-system_00000013900230118253639990000007730061351172289453_" class="st7" cx="63.2" cy="81.9" r="7.2"/>
+<circle id="parking-standards-and-availability_00000049900700759287645710000004889107131183392171_" class="st7" cx="47" cy="81.9" r="7.2"/>
+<circle id="vehicle-ownership-taxes_00000122722852380831087040000004111542623185026710_" class="st7" cx="30.7" cy="81.9" r="7.2"/>
+<circle id="promote-bicycle-culture-in-workplaces_00000014596621817834834110000009080599585231244982_" class="st7" cx="22.6" cy="96" r="7.2"/>
+<circle id="compact-cities_00000006673264835945663690000001938295182735778478_" class="st7" cx="14.5" cy="110.1" r="7.2"/>
+<circle id="trams-and-light-rail_00000049906596006790702010000013036436826323821968_" class="st7" cx="22.6" cy="124.1" r="7.2"/>
+<circle id="traffic-calming-measures_00000152241885474349852960000008213445960285696443_" class="st7" cx="30.7" cy="138.2" r="7.2"/>
+<circle id="enhance-cycle-pedestrian-safety_00000006668569849712262140000013008333516710569883_" class="st7" cx="47" cy="138.2" r="7.2"/>
+<circle id="integrated-ticketing-systems_00000165948649934832099300000017168320654420945291_" class="st7" cx="63.2" cy="138.2" r="7.2"/>
+<circle id="land-use-to-support-public-transit_00000124157719963333833390000016480202053844551342_" class="st7" cx="79.5" cy="138.2" r="7.2"/>
+<circle id="safe-routes-to-school-programs_00000183229479893018460310000006809557899409048761_" class="st7" cx="87.6" cy="124.1" r="7.2"/>
+<circle id="fuel-taxes_00000114778858020119166030000000855335366562747062_" class="st7" cx="95.7" cy="110.1" r="7.2"/>
+<circle id="developer-contributions_00000148623139829767383370000011221996936136403873_" class="st7" cx="87.6" cy="96" r="7.2"/>
+<circle id="multimodal-access-to-transportation_00000104682935573909331370000016992707486827375019_" class="st7" cx="79.5" cy="81.9" r="7.2"/>
+<circle id="first-last-mile-infrastructure_00000047051906967032055980000009941301308894196635_" class="st7" cx="71.3" cy="67.9" r="7.2"/>
+<circle id="speed-reduction-strategies" class="st7" cx="55.1" cy="67.9" r="7.2"/>
+<circle id="presence-of-medians-or-midblock-crosswalks_00000121258170407283497370000009463634975251399342_" class="st7" cx="38.9" cy="67.9" r="7.2"/>
+<circle id="edge-lane-roads-elrs_00000059309632251398384340000015891621667460289714_" class="st7" cx="22.6" cy="67.9" r="7.2"/>
+<circle id="built-environment-strategies-to-deter-crime" class="st7" cx="14.5" cy="81.9" r="7.2"/>
+<a xlink:href="/smart-strategy-framework"><circle id="green-space" class="st8" cx="135" cy="141" r="31.6"/></a>
+<circle id="encourage-transit-oriented-development_00000103960283448758595000000011634574796059223193_" class="st9" cx="126.9" cy="141" r="7.2"/>
+<circle id="develop-and-increase-vegetation-barriers-green-walls-or-buffers_00000172409507510884492900000014009890338318893234_" class="st9" cx="143.1" cy="141" r="7.2"/>
+<circle id="complete-streets_00000171690519295897019560000006140125909331486636_" class="st9" cx="135" cy="126.9" r="7.2"/>
+<circle id="expand-bicycle-and-pedestrian-infrastructure_00000126283204723303641800000008488965013448040064_" class="st9" cx="118.8" cy="126.9" r="7.2"/>
+<circle id="route-and-trip-planning-tools_00000052100679979824468940000001745015202071710629_" class="st9" cx="110.7" cy="141" r="7.2"/>
+<circle id="urban-greening_00000028293621017683270910000012280128231315537060_" class="st9" cx="118.8" cy="155" r="7.2"/>
+<circle id="redesign-and-repurpose-the-road-system_00000099659719431497740140000010810300356316771202_" class="st9" cx="135" cy="155" r="7.2"/>
+<circle id="parking-standards-and-availability_00000127763580986171841880000006382111099046423468_" class="st9" cx="151.3" cy="155" r="7.2"/>
+<circle id="vegetation-runoff-controls" class="st9" cx="159.4" cy="141" r="7.2"/>
+<circle id="noise-barriers" class="st9" cx="151.3" cy="126.9" r="7.2"/>
+<a xlink:href="/smart-strategy-framework"><circle id="less-contamination" class="st10" cx="216.2" cy="141" r="47.8"/></a>
+<circle id="choose-fuel-efficient-vehicles_00000042727466386458349580000014257685237596248968_" class="st11" cx="208.1" cy="141" r="7.2"/>
+<circle id="reduce-vehicle-idling_00000016046360153792106750000008076946201148316331_" class="st11" cx="224.3" cy="141" r="7.2"/>
+<circle id="introduce-low-or-zero-emission-zones_00000110455998485170942910000010362731126401394323_" class="st11" cx="216.2" cy="126.9" r="7.2"/>
+<circle id="develop-and-increase-vegetation-barriers-green-walls-or-buffers_00000183213846428055230370000010500288161351155099_" class="st11" cx="200" cy="126.9" r="7.2"/>
+<circle id="vehicle-emissions-regulations-and-standards_00000023260699335824404510000007228548825573245583_" class="st11" cx="191.9" cy="141" r="7.2"/>
+<circle id="clean-freight-and-retrofitting_00000029761257873324621730000000333052390675087295_" class="st11" cx="200" cy="155" r="7.2"/>
+<circle id="expand-bicycle-and-pedestrian-infrastructure_00000130638338331081918030000001777250060273988752_" class="st11" cx="216.2" cy="155" r="7.2"/>
+<circle id="modify-construction-practices_00000058571105524397471110000000471756153888189099_" class="st11" cx="232.5" cy="155" r="7.2"/>
+<circle id="vehicle-restrictions_00000150810079183479809880000013836366299742388627_" class="st11" cx="240.6" cy="141" r="7.2"/>
+<circle id="urban-greening_00000138550388287214364590000003573192935602012315_" class="st11" cx="232.5" cy="126.9" r="7.2"/>
+<circle id="road-maintenance_00000100346324881807372460000013909715157472310942_" class="st11" cx="224.3" cy="112.8" r="7.2"/>
+<circle id="vehicle-maintenance-activities_00000050631926948499402450000008221346998520581036_" class="st11" cx="208.1" cy="112.8" r="7.2"/>
+<circle id="curb-elimination" class="st11" cx="191.9" cy="112.8" r="7.2"/>
+<circle id="litter-control-programs-and-regulations" class="st11" cx="183.7" cy="126.9" r="7.2"/>
+<circle id="chemical-use-and-management" class="st11" cx="175.6" cy="141" r="7.2"/>
+<circle id="reduction-of-runoff-velocity" class="st11" cx="183.7" cy="155" r="7.2"/>
+<circle id="vegetation-runoff-controls_00000137130038660783999960000006424970497511791235_" class="st11" cx="191.9" cy="169.1" r="7.2"/>
+<circle id="street-cleaning" class="st11" cx="208.1" cy="169.1" r="7.2"/>
+<circle id="catch-basins" class="st11" cx="224.3" cy="169.1" r="7.2"/>
+<circle id="permeable-pavements" class="st11" cx="240.6" cy="169.1" r="7.2"/>
+<circle id="detention-and-retention-ponds" class="st11" cx="248.7" cy="155" r="7.2"/>
+<circle id="filtration-and-infiltration-systems" class="st11" cx="256.8" cy="141" r="7.2"/>
+<circle id="transportation-waste-management" class="st11" cx="248.7" cy="126.9" r="7.2"/>
+<circle id="less-traffic-violence" class="st12" cx="196.7" cy="253" r="64.1"/>
+<circle id="ridesharing_00000051372132618251233610000012125262037050342577_" class="st13" cx="188.6" cy="253" r="7.2"/>
+<circle id="park-and-ride-facilities_00000002357190769261881550000004342300651218402473_" class="st13" cx="204.8" cy="253" r="7.2"/>
+<circle id="improve-road-traffic-flow_00000160891897019379827680000012213926242158092417_" class="st13" cx="196.7" cy="238.9" r="7.2"/>
+<circle id="encourage-remote-work-or-flexible-working-hours_00000059299750630213101410000008888339740178234240_" class="st13" cx="180.4" cy="238.9" r="7.2"/>
+<circle id="encourage-transit-oriented-development_00000092415737243756091230000015649715258103535792_" class="st13" cx="172.3" cy="253" r="7.2"/>
+<circle id="develop-and-increase-vegetation-barriers-green-walls-or-buffers_00000017514029270271819630000016797510431553715615_" class="st13" cx="180.4" cy="267" r="7.2"/>
+<circle id="complete-streets_00000083807061519059729380000006764265429578422417_" class="st13" cx="196.7" cy="267" r="7.2"/>
+<circle id="expand-bicycle-and-pedestrian-infrastructure_00000108993472388282321570000015780756646275407746_" class="st13" cx="212.9" cy="267" r="7.2"/>
+<circle id="parking-guidance-systems_00000046310808332802131350000010732165871541026714_" class="st13" cx="221.1" cy="253" r="7.2"/>
+<circle id="vehicle-restrictions_00000109749843614378785490000015529158210829634981_" class="st13" cx="212.9" cy="238.9" r="7.2"/>
+<circle id="route-and-trip-planning-tools_00000125568630445665251390000002811754655356762292_" class="st13" cx="204.8" cy="224.8" r="7.2"/>
+<circle id="redesign-and-repurpose-the-road-system_00000004535296097769173520000008207698739781709210_" class="st13" cx="188.6" cy="224.8" r="7.2"/>
+<circle id="vehicle-ownership-taxes_00000127005613269155650640000008782818493465915070_" class="st13" cx="172.3" cy="224.8" r="7.2"/>
+<circle id="fleet-management-systems_00000176724530289499158640000010434507959456470971_" class="st13" cx="164.2" cy="238.9" r="7.2"/>
+<circle id="compact-cities_00000148622074208736517260000007516128792362614183_" class="st13" cx="156.1" cy="253" r="7.2"/>
+<circle id="trams-and-light-rail_00000032623684948038054210000003897975861288153993_" class="st13" cx="164.2" cy="267" r="7.2"/>
+<circle id="traffic-calming-measures_00000122713447439622236380000017433753017157547454_" class="st13" cx="172.3" cy="281.1" r="7.2"/>
+<circle id="road-maintenance_00000018196829728987368220000001745627925211101057_" class="st13" cx="188.6" cy="281.1" r="7.2"/>
+<circle id="enhance-cycle-pedestrian-safety_00000103260695962138332720000016160522743626512574_" class="st13" cx="204.8" cy="281.1" r="7.2"/>
+<circle id="vehicle-automation_00000058583043577282510300000007844527202079848851_" class="st13" cx="221.1" cy="281.1" r="7.2"/>
+<circle id="safe-routes-to-school-programs_00000124860331064862600250000008116788958806044855_" class="st13" cx="229.2" cy="267" r="7.2"/>
+<circle id="fuel-taxes_00000049931657953978456570000002533294754848025002_" class="st13" cx="237.3" cy="253" r="7.2"/>
+<circle id="health-impact-assessments-hias_00000162333078320880379830000008900785949812790918_" class="st13" cx="229.2" cy="238.9" r="7.2"/>
+<circle id="first-last-mile-infrastructure_00000095311273842886270140000007159749261628844430_" class="st13" cx="221.1" cy="224.8" r="7.2"/>
+<circle id="decrease-distracted-driving" class="st13" cx="212.9" cy="210.8" r="7.2"/>
+<circle id="integrate-safety-into-planning" class="st13" cx="196.7" cy="210.8" r="7.2"/>
+<circle id="public-transit-safety-improvements_00000175309751516440695400000016818832844438290817_" class="st13" cx="180.4" cy="210.8" r="7.2"/>
+<circle id="reduce-high-risk-vehicle-travel" class="st13" cx="164.2" cy="210.8" r="7.2"/>
+<circle id="intelligent-transportation-systems-its" class="st13" cx="156.1" cy="224.8" r="7.2"/>
+<circle id="speed-reduction-strategies_00000119099079919698843090000007349568163589362591_" class="st13" cx="148" cy="238.9" r="7.2"/>
+<circle id="vision-zero" class="st13" cx="139.8" cy="253" r="7.2"/>
+<circle id="high-friction-surface-treatments-hfst" class="st13" cx="148" cy="267" r="7.2"/>
+<circle id="mandate-anonymized-access-to-critical-safety-data" class="st13" cx="156.1" cy="281.1" r="7.2"/>
+<circle id="permit-automated-traffic-enforcement" class="st13" cx="164.2" cy="295.2" r="7.2"/>
+<circle id="adopt-requirements-for-side-guard-protections-on-trucks" class="st13" cx="180.4" cy="295.2" r="7.2"/>
+<circle id="presence-of-medians-or-midblock-crosswalks_00000116215692661327042270000002292171227572936345_" class="st13" cx="196.7" cy="295.2" r="7.2"/>
+<circle id="edge-lane-roads-elrs_00000033364923207339426630000009689668046769729721_" class="st13" cx="212.9" cy="295.2" r="7.2"/>
+<circle id="conventional-signs-and-markings" class="st13" cx="229.2" cy="295.2" r="7.2"/>
+<circle id="built-environment-strategies-to-deter-crime_00000075856504635865665480000008003421863845465788_" class="st13" cx="237.3" cy="281.1" r="7.2"/>
+<circle id="graduated-driver-licensing-gdl-systems" class="st13" cx="245.4" cy="267" r="7.2"/>
+<circle id="reduce-the-number-and-severity-of-crashes" class="st13" cx="253.5" cy="253" r="7.2"/>
+<circle id="increase-resiliency-of-the-transportation-system" class="st13" cx="245.4" cy="238.9" r="7.2"/>
+<a xlink:href="/smart-strategy-framework"><circle id="less-traffic-noise" class="st14" cx="314.5" cy="198.2" r="64.1"/></a>
+<circle id="choose-fuel-efficient-vehicles_00000008865183495650607920000004686112611523303300_" class="st15" cx="306.4" cy="198.2" r="7.2"/>
+<circle id="introduce-congestion-charge_00000173135015726299329580000010446821838436764808_" class="st15" cx="322.6" cy="198.2" r="7.2"/>
+<circle id="establish-a-national-mileage-based-user-fee-system-mbuf-or-a-road-user-charge-ruc_00000016776454096121127480000001226698524416864928_" class="st15" cx="314.5" cy="184.1" r="7.2"/>
+<circle id="carsharing_00000092457111951735372090000005142930321972433546_" class="st15" cx="298.2" cy="184.1" r="7.2"/>
+<circle id="ridesharing_00000015339373351644968320000001669854326410106509_" class="st15" cx="290.1" cy="198.2" r="7.2"/>
+<circle id="park-and-ride-facilities_00000029012686303252032350000006291541813842864006_" class="st15" cx="298.2" cy="212.2" r="7.2"/>
+<circle id="parking-cash-out-program_00000162353663100060958680000015158633487891015555_" class="st15" cx="314.5" cy="212.2" r="7.2"/>
+<circle id="improve-road-traffic-flow_00000165210050908689780260000009944589010847463853_" class="st15" cx="330.7" cy="212.2" r="7.2"/>
+<circle id="encourage-remote-work-or-flexible-working-hours_00000116924297806335021960000004005088801218270126_" class="st15" cx="338.9" cy="198.2" r="7.2"/>
+<circle id="encourage-transit-oriented-development_00000062164899785708663220000005246115464184710032_" class="st15" cx="330.7" cy="184.1" r="7.2"/>
+<circle id="develop-and-increase-vegetation-barriers-green-walls-or-buffers_00000005255414443136939960000000517636949975756945_" class="st15" cx="322.6" cy="170" r="7.2"/>
+<circle id="promote-bike-sharing_00000167364644181581894480000009441290905183351710_" class="st15" cx="306.4" cy="170" r="7.2"/>
+<circle id="complete-streets_00000141444935343888051140000001173904193425498776_" class="st15" cx="290.1" cy="170" r="7.2"/>
+<circle id="increasing-parking-charges_00000183211507361760288530000003154183210718253955_" class="st15" cx="282" cy="184.1" r="7.2"/>
+<circle id="expand-public-transportation_00000113320004656127707930000017108836098656884375_" class="st15" cx="273.9" cy="198.2" r="7.2"/>
+<circle id="expand-bicycle-and-pedestrian-infrastructure_00000168112055760911929380000002479532541685022395_" class="st15" cx="282" cy="212.2" r="7.2"/>
+<circle id="modify-construction-practices_00000180343530798834665930000009962424074312084407_" class="st15" cx="290.1" cy="226.3" r="7.2"/>
+<circle id="vehicle-restrictions_00000061437932522604490560000004828089440702392245_" class="st15" cx="306.4" cy="226.3" r="7.2"/>
+<circle id="route-and-trip-planning-tools_00000106861333645771872430000002680442869789369993_" class="st15" cx="322.6" cy="226.3" r="7.2"/>
+<circle id="urban-greening_00000108992248927833662760000013547805750375994533_" class="st15" cx="338.9" cy="226.3" r="7.2"/>
+<circle id="redesign-and-repurpose-the-road-system_00000180339618029581398610000006044019238169318032_" class="st15" cx="347" cy="212.2" r="7.2"/>
+<circle id="parking-standards-and-availability_00000182491139581870166550000001935618912752281480_" class="st15" cx="355.1" cy="198.2" r="7.2"/>
+<circle id="vehicle-ownership-taxes_00000170980088852607789270000014105389538303839656_" class="st15" cx="347" cy="184.1" r="7.2"/>
+<circle id="fleet-management-systems_00000071520329203987018230000007403483150543927218_" class="st15" cx="338.9" cy="170" r="7.2"/>
+<circle id="promote-bicycle-culture-in-workplaces_00000139261537566640871060000003775590065621788812_" class="st15" cx="330.7" cy="156" r="7.2"/>
+<circle id="compact-cities_00000154425814665040199220000010445384523321245845_" class="st15" cx="314.5" cy="156" r="7.2"/>
+<circle id="trams-and-light-rail_00000081644291812024780800000008151065349655988635_" class="st15" cx="298.2" cy="156" r="7.2"/>
+<circle id="traffic-calming-measures_00000173878223110401267630000004803494768369214087_" class="st15" cx="282" cy="156" r="7.2"/>
+<circle id="road-maintenance_00000071551035873269449940000017144109778605104048_" class="st15" cx="273.9" cy="170" r="7.2"/>
+<circle id="enhance-cycle-pedestrian-safety_00000063594057854455711670000006625738637269180308_" class="st15" cx="265.8" cy="184.1" r="7.2"/>
+<circle id="lower-transit-fares_00000160900148549289106330000004803581392245455749_" class="st15" cx="257.6" cy="198.2" r="7.2"/>
+<circle id="integrated-ticketing-systems_00000000919497886663993530000016456290469780592031_" class="st15" cx="265.8" cy="212.2" r="7.2"/>
+<circle id="land-use-to-support-public-transit_00000182496116175935573120000013918334349601824674_" class="st15" cx="273.9" cy="226.3" r="7.2"/>
+<circle id="safe-routes-to-school-programs_00000122716722489568426040000014863830951262843268_" class="st15" cx="282" cy="240.3" r="7.2"/>
+<circle id="fuel-taxes_00000114795520150921544970000017816431941855365520_" class="st15" cx="298.2" cy="240.3" r="7.2"/>
+<circle id="speed-reduction-strategies_00000103240243749901584300000013024111385038455224_" class="st15" cx="314.5" cy="240.3" r="7.2"/>
+<circle id="low-noise-vehicles-and-tires" class="st15" cx="330.7" cy="240.3" r="7.2"/>
+<circle id="noise-emission-standards" class="st15" cx="347" cy="240.3" r="7.2"/>
+<circle id="low-noise-road-surfaces" class="st15" cx="355.1" cy="226.3" r="7.2"/>
+<circle id="noise-barriers_00000049926653358619173890000011059381585941265817_" class="st15" cx="363.2" cy="212.2" r="7.2"/>
+<circle id="noise-compatible-planning" class="st15" cx="371.3" cy="198.2" r="7.2"/>
+<circle id="alteration-of-the-roadway-alignment" class="st15" cx="363.2" cy="184.1" r="7.2"/>
+<text transform="matrix(1 0 0 1 116.5669 138.1897)"><tspan x="0" y="0" class="st786 st787 st788">Green</tspan><tspan x="0.8" y="16" class="st786 st787 st788">Space</tspan></text>
+<text transform="matrix(1 0 0 1 289.095 60.3643)"><tspan x="0" y="0" class="st786 st787 st789">Less</tspan><tspan x="-24.2" y="22" class="st786 st787 st789">Emissions</tspan></text>
+<text transform="matrix(1 0 0 1 38.8146 210.3866)"><tspan x="0" y="0" class="st786 st787 st790">Connectivity </tspan><tspan x="6.3" y="18" class="st786 st787 st790">&amp; Inclusion</tspan></text>
+<text transform="matrix(1 0 0 1 179.802 248.4769)"><tspan x="0" y="0" class="st786 st787 st791">Less </tspan><tspan x="-41.2" y="20" class="st786 st787 st791">Traffic Violence</tspan></text>
+<text transform="matrix(1 0 0 1 295.921 196.1514)"><tspan x="0" y="0" class="st786 st787 st791">Less </tspan><tspan x="-30.4" y="20" class="st786 st787 st791">Traffic Noise</tspan></text>
+<text transform="matrix(1 0 0 1 203.3476 135.5783)"><tspan x="0" y="0" class="st786 st787 st788">Less</tspan><tspan x="-33.6" y="16" class="st786 st787 st788">Contamination</tspan></text>
+<rect x="-1.8" y="81.9" class="st792" width="115.1" height="42.2"/>
+<text transform="matrix(1 0 0 1 34.3872 97.3527)"><tspan x="0" y="0" class="st786 st787 st790">Active </tspan><tspan x="-30.8" y="18" class="st786 st787 st790">Transportation</tspan></text>
+<rect x="107.1" y="37.8" class="st792" width="100.1" height="35"/>
+<text transform="matrix(1 0 0 1 130.1149 53.2322)"><tspan x="0" y="0" class="st786 st787 st790">Healthy</tspan><tspan x="-13.4" y="18" class="st786 st787 st790">Destination</tspan></text>
+</svg>

@@ -1,0 +1,39 @@
+{
+  "name": "d3js-circle-packing",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ttitamu/d3js-circle-packing/"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">18.17.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss:dev": "sass resources/scss/:resources/css/ --source-map resources/css",
+    "scss:prod": "sass resources/scss/:resources/css/ --style 'compressed' --no-source-map -q",
+    "postcss": "postcss --use autoprefixer -r resources/css/*.css",
+    "uglify:dev": "uglifyjs resources/js/src/*.js -b -o resources/js/app.js",
+    "uglify:prod": "uglifyjs resources/js/src/*.js -c -m -o resources/js/app.min.js",
+    "prod": "npm run scss:prod & npm run postcss & npm run uglify:prod",
+    "build": "npm run scss:dev & npm run postcss & npm run uglify:dev",
+    "watch:scss": "nodemon --watch resources/scss -e scss -x \"npm run scss:dev\"",
+    "watch:js": "nodemon --watch resources/js/src -e js -x \"npm run uglify:dev\"",
+    "watch": "npm run watch:scss & npm run watch:js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "nodemon": "^3.0.1",
+    "postcss": "^8.4.26",
+    "postcss-cli": "^10.1.0",
+    "sass": "^1.63.6",
+    "stylelint": "^14.16.1",
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^4.7.0",
+    "uglify-js": "^3.16.1"
+  }
+}

@@ -1,0 +1,633 @@
+.smart-single {
+  :focus {
+    outline: $white dotted 2px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0.67em 0;
+  }
+
+  .label {
+    font-family: 'Open Sans Condensed', 'open-sans-condensed', 'Roboto', sans-serif;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+
+    &.circle {
+      font-size: 0;
+
+      @include media('>small') {
+        font-size: x-small;
+      }
+    }
+  }
+
+  article {
+    &.type-strategy {
+      .wp-block-group.descr {
+        display: none !important;
+      }
+    }
+    ul.pagenav {
+
+      li {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    .set {
+      display: flex;
+
+      a {
+        border-bottom: none;
+      }
+    }
+
+    .entry-description {
+      font-size: 1.6rem;
+      margin-bottom: 2em;
+
+      ul {
+        margin-inline: 1rem;
+
+        li {
+          list-style-type: initial;
+          margin: 0 2em;
+          padding: initial;
+        }
+      }
+    }
+
+
+//* OBJECTIVES
+    .objectives-container {
+      width: 100%;
+      display: flex;
+
+      @include media('>small') {
+        margin-block: 0 4rem;
+        height: 10rem;
+      }
+
+      @include media('>desktop') {
+        justify-content: center;
+      }
+    }
+
+    .objectives.circles {
+      place-content: center;
+      place-items: center;
+    }
+
+    @mixin circle($size) {
+      $ring-size: calc(#{$size} / 14);
+
+      .circle {
+        height: $size;
+        width: $size;
+        padding-inline: calc(#{$ring-size} / 3 * 2);
+
+        &:after {
+          border-width: $ring-size;
+          height: calc(100% + calc(#{$size} / 3 * .707106));
+          width: calc(100% + calc(#{$size} / 3 * .707106));
+        }
+      }
+    }
+
+    @each $objective, $color in $objectives {
+      li.#{$objective} {
+        @include circle(10.75px);
+
+        @include media('>small') {
+          @include circle(21.5px);
+          .circle {
+            font-size: 0;
+          }
+        }
+
+        @include media('>tablet') {
+          @include circle(32.25px);
+        }
+
+        @include media('>medium') {
+          @include circle(64.5px);
+        }
+
+        .circle {
+          @include color(grayscale($color));
+          border: 1px solid $color;
+
+          &:after {
+            border-color: transparent;
+          }
+        }
+      }
+
+      &.objectives-#{$objective} {
+        li.#{$objective} {
+          @include circle(32.25px);
+
+          @include media('>small') {
+            @include circle(64.5px);
+
+            .circle {
+              font-size: x-small;
+            }
+          }
+
+          @include media('>tablet') {
+            @include circle(75.25px);
+          }
+
+          @include media('>medium') {
+            @include circle(86px);
+
+            .circle {
+              font-size: small;
+            }
+          }
+
+          .circle {
+            @include color($color);
+
+            &:after {
+              border-color: $color;
+            }
+          }
+        }
+      }
+    }
+
+    li.objective {
+      margin: 2vw;
+      position: relative;
+
+      @include media('>tablet') {
+        margin: 1.2rem;
+      }
+
+      @include media('>medium') {
+        margin: 1.5rem;
+      }
+    }
+
+    .circle {
+      align-items: center;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+
+      &:after {
+        border-radius: 50%;
+        border-style: solid;
+        content: '';
+        position: absolute;
+      }
+    }
+
+    .objectives-list {
+      display: inline-flex;
+      flex-wrap: wrap;
+
+      @each $objective, $color in $objectives {
+        span.#{$objective} {
+          color: $color;
+        }
+      }
+    }
+
+    .list-descriptor {
+      font-weight: 600;
+    }
+
+//* PHASES
+
+    .set.phases {
+      flex-wrap: wrap;
+    }
+
+    $phases: 'policy', 'projects', 'operations', 'materials', 'maintenance', 'construction', 'end-of-life';
+
+    @each $phase in $phases {
+      li.#{$phase} {
+        background-image: url('../images/phasegrey-#{$phase}.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      &.phases-#{$phase} li.#{$phase} {
+        background-image: url('../images/phase-#{$phase}.svg');
+      }
+    }
+
+    .phase {
+      $phase-size: 20vw;
+      height: $phase-size;
+      width: $phase-size;
+      font-size: 0;
+      margin-inline: -2px;
+      margin-bottom: 10px;
+
+      @include media('>small') {
+        $phase-size: 13vw;
+        height: $phase-size;
+        width: $phase-size;
+      }
+      @include media('>tablet') {
+        $phase-size: 12vw;
+        height: $phase-size;
+        width: $phase-size;
+      }
+      @include media('>medium') {
+        $phase-size: 10vw;
+        height: $phase-size;
+        width: $phase-size;
+        margin-inline: -5px;
+      }
+      @include media('>grid') {
+        $phase-size: 10rem;
+        height: $phase-size;
+        width: $phase-size;
+      }
+    }
+  }
+
+  .site-inner {
+    overflow-x: hidden;
+  }
+
+  .entry {
+    padding-inline: 1rem;
+
+    @include media('>tablet') {
+      padding-inline: 2rem;
+    }
+  }
+
+  .entry-header {
+    position: relative;
+    padding-top: 2rem;
+  }
+
+  .title-area {
+    padding: 0;
+  }
+
+  .entry-title {
+    font-size: 2.3rem;
+
+    @include media('>small') {
+      font-size: 2.5rem;
+    }
+    @include media('>tablet') {
+      font-size: 3.6rem;
+    }
+  }
+
+  @mixin singleHeaderFont($size, $color) {
+    color: $color;
+    font-family: "Open Sans Condensed", "open-sans-condensed", "Roboto Condensed", "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: $size;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+  }
+
+  .entry-header-block-title,
+  h3 {
+    @include singleHeaderFont(medium, $green);
+  }
+
+  h4,
+  .single-header-style {
+    @include body2Font(2rem, 700);
+    @include headingline();
+    color: #222;
+  }
+
+  .pagenav {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 2rem;
+
+    @include media('>medium') {
+      margin-top: 4vh;
+    }
+
+    li {
+      @include header2Font(1.8rem, 800);
+      line-height: 1.8;
+      text-transform: none;
+
+      a {
+        border-bottom-style: solid;
+        border-bottom-color: transparent;
+        color: $green;
+
+        &:hover {
+          border-bottom-color: #c7c7c7;
+        }
+      }
+    }
+  }
+
+  .entry-header-block-title {
+    color: #666;
+  }
+
+  h4 {
+    @include headingline();
+  }
+
+  .entry-header-block {
+    background-color: #e6e6e6;
+    margin-inline: -1.5rem;
+    padding: 4rem 1.5rem;
+    margin-top: 1rem;
+
+    @include media('>small') {
+      padding: 4rem 2rem;
+    }
+    @include media('>tablet') {
+      padding: 3rem;
+    }
+    @include media('>medium') {
+      // padding: 8rem 3rem 3rem;
+    }
+  }
+
+  .chart-area {
+    display: grid;
+
+    p {
+      margin-top: 2rem;
+    }
+
+    p,
+    a {
+      @include singleHeaderFont(default, default);
+    }
+  }
+
+  .chart {
+    background-image: url('../images/nicesmallchart.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 20rem;
+    display: flex;
+    min-height: -webkit-fill-available;
+    border-bottom: 0;
+  }
+
+  // .title-block,
+  .strategy-groups,
+  .indicator-groups,
+  .tool-groups {
+    @include media ('>medium') {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      grid-template-rows: auto;
+      grid-gap: 5rem;
+    }
+  }
+
+  .strategy-groups,
+  .indicator-groups,
+  .tool-groups {
+    @include media('>small') {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+
+      .group {
+        margin-block: 1rem;
+      }
+      .phases-container {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+      }
+      .whos-container {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+      }
+      .side-title-area {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+      }
+    }
+
+    @include media('>medium') {
+      grid-template-columns: 3fr 1fr;
+
+      .phases-container {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+      }
+      .whos-container {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+      }
+    }
+
+    .side-title-area {
+      display: block;
+      visibility: visible;
+
+      @include media ('>medium') {
+        display: none;
+        visibility: hidden;
+      }
+    }
+  }
+
+  .title-block {
+    .side-title-area {
+      display: none;
+      visibility: hidden;
+
+      @include media ('>medium') {
+        display: initial;
+        visibility: visible;
+      }
+    }
+  }
+
+  p {
+    font-size: 14px;
+
+    @include media('>tablet') {
+      font-size: 1.6rem;
+    }
+  }
+
+  .whos li, .pagenav li {
+    font-size: 14px;
+
+    @include media('>tablet') {
+      font-size: 1.6rem;
+    }
+
+    @include media('>medium') {
+      font-size: 1.7rem;
+    }
+  }
+
+  h4 {
+    margin-bottom: 2rem;
+  }
+
+  .entry-content,
+  .entry-footer {
+    padding-block: 3rem;
+
+    @include media('>small') {
+      padding-inline: 1rem;
+    }
+    @include media('>tablet') {
+      padding-inline: 2rem;
+    }
+    @include media('>medium') {
+      padding-block: 4rem;
+    }
+
+    p {
+      word-break: break-word;
+    }
+
+    h3 {
+      // @include header2Font(clamp(18px, 5vw, 26px), 700);
+      @include header2Font(24px, 700);
+      letter-spacing: -0.5px;
+      text-transform: unset;
+      // background: linear-gradient(135deg,#1f005c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060, #ffb56b);
+      // background: linear-gradient(135deg,#e8efdb, #d2e0b7, #bcd193, #a6c26f, #8fb24c, #738f3c, #566b2d,#39471e);
+      // background: linear-gradient(135deg, #beaf62, #a0be66, #64be83, #65beb0,#6372be, #8365be, #af64be, #be6573);
+      // -webkit-background-clip: text;
+      // -webkit-text-fill-color: transparent;
+      margin-block: 0.4rem 2rem;
+
+      @include media('<=small') {
+        @include headingline();
+      }
+    }
+  }
+
+  .wp-block-group,
+  &.single-indicator .entry-content .section {
+
+    // .wp-block-group__inner-container {
+      margin-block: 4rem;
+    // }
+
+    &:not(#tool-link) {
+      // > .wp-block-group__inner-container {
+        @include media('>small') {
+          display: grid;
+          grid-template-columns: 1fr 3fr;
+          gap: 0 4rem;
+          margin-block: 5rem;
+        }
+
+        :first-child {
+          // display: contents;
+          grid-column: 1 / 1;
+          grid-row: auto;
+        }
+
+        :not(:first-child) {
+          grid-column: 2 / 2;
+          grid-row: auto;
+        }
+      // }
+    }
+
+    .grouptext,
+    p {
+      overflow: auto;
+    }
+
+    div, 
+    p {
+      @include bodyFont(1.6rem, 400);
+    }
+  }
+
+  &.single-strategy .entry-content {
+    .wp-block-group.benefits,
+    .wp-block-group.implement,
+    .wp-block-group.examples,
+    .wp-block-group.refs {
+      margin-block: 4rem;
+
+      @include media('>small') {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 0 4rem;
+        margin-block: 5rem;
+      }
+
+      :first-child {
+        // display: contents;
+        grid-column: 1 / 1;
+        grid-row: auto;
+      }
+
+      :not(:first-child) {
+        grid-column: 2 / 2;
+        grid-row: auto;
+        overflow: visible;
+      }
+    }
+  }
+
+  .wp-block-group.descr {
+    display: none;
+    visibility: hidden;
+  }
+
+
+
+  // Footnotes and References
+
+  #cmfSimpleFootnoteDefinitionBox::before {
+    content: "References" !important;
+    @include header2Font(24px, 700);
+    letter-spacing: -0.5px;
+    color: $green;
+  }
+
+  #cmfSimpleFootnoteDefinitionBox {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 0 4rem;
+    margin-block: 5rem;
+
+    ::before {
+      grid-column: 1 / 1;
+      grid-row: auto;
+    }
+
+    .cmfSimpleFootnoteDefinitionItem {
+      grid-column: 2 / 2;
+      grid-row: auto;
+    }
+  }
+
+  .cmfSimpleFootnoteDefinitionItem span {
+    font-size: 15px;
+  }
+
+  #cmfSimpleFootnoteDefinitionBox .cmfSimpleFootnoteDefinitionItem .cmfSimpleFootnoteDefinitionItemId {
+    display: inline;
+  }
+
+  #cmfSimpleFootnoteDefinitionBox > div {
+    padding: 0;
+    margin-block: 10px;
+  }
+
+}

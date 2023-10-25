@@ -1,0 +1,168 @@
+$green: #8aab48;
+$brightgreen: #8cc63f;
+$darkgreen: #435c2b;
+$darkdarkgreen: #323f26;
+$white: #fff;
+$black: #222;
+$blackblack: #030303;
+$grey: #555;
+$translucent: rgba(255, 255, 255, .33);
+$lightgrey: #d3d3d3;
+$icongreen: #6cc04a;
+$iconblue: #6ec4e9;
+$v3blue: #809eae;
+$v3green: $green;
+$v3red: #eb1c2b;
+$bluefade: rgba(110, 196, 233, .5);
+$activeyellow: #ebcf95;
+
+// Objectives
+$emissions: #002d5d;
+$violence: #0367a6;
+$destinations: #c3251d;
+$healthy-destination: #c3251d;
+$transportation: #f27405;
+$active-transportation: #f27405;
+$inclusion: #f2a705;
+$connectivity: #f2a705;
+$contamination: #7b3e33;
+$greenspace: #4f7302;
+$green-space: #4f7302;
+$noise: #d95b45;
+
+$crashorange: #f99930;
+
+$objectives: (
+  'emissions': $emissions,
+  'violence': $violence,
+  'healthy-destination': $healthy-destination,
+  'active-transportation': $active-transportation,
+  'connectivity': $connectivity,
+  'contamination': $contamination,
+  'green-space': $green-space,
+  'noise': $noise
+);
+
+$borderradius: 15px;
+$logodimensions: 150px;
+$logospace: 25px;
+$navheight: 80px;
+$newsheight: 308px;
+
+@mixin fullwidth {
+  left: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  position: relative;
+  right: 50%;
+  width: 100vw;
+}
+
+// Dynamically set the color of text based on the background color
+@function text($bg) {
+  @if(lightness($bg) > 44) {
+    @return #000;
+  } @else {
+    @return #FFF;
+  }
+}
+
+// Allows us to set the background color and text color at the same time
+@mixin color($color) {
+  background: $color;
+  color: text($color);
+}
+
+@mixin bodyFont($size: 1.6rem, $weight: 400) {
+  font-family: 'Open Sans', 'open-sans', sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+}
+
+@mixin body2Font($size: 1.6rem, $weight: 300) {
+  font-family: 'open-sans-condensed', 'Open Sans Condensed', sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+}
+
+@mixin headerFont($size: 2rem, $weight: 700) {
+  font-family: 'Open Sans', 'open-sans', sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+}
+
+@mixin header2Font($size: 1.6rem, $weight: 600) {
+  font-family: 'Bitter', sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+}
+
+@mixin header3Font($size: 1.6rem, $weight: 700) {
+  font-family: 'open-sans-condensed', 'Open Sans Condensed', sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+}
+
+@mixin contentWidth {
+  max-width: 1080px;
+  margin-inline: auto;
+}
+
+@mixin slimContentWidth($inline-margin: auto) {
+  margin-inline: $inline-margin;
+  max-width: 500px;
+
+  @include media('>tablet') {
+    max-width: 700px;
+  }
+}
+
+@mixin headingline() {
+  display: flex;
+  width: 100%;
+  white-space: nowrap;
+
+  &:after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #c7c7c7;
+    align-self: center;
+    margin-left: 10px;
+  }
+}
+
+// Base Styles
+body {
+  &.smart-framework,
+  &.smart-single {
+    @include bodyFont;
+    line-height: 1.5;
+
+    .chart-part {
+      @include body2Font;
+    }
+  }
+}
+
+h1.entry-title,
+h1.archive-title {
+  @include body2Font(3.6rem, 800);
+  color: $green;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+@import 'include-media';
+@import 'default';
+@import 'carteeh';
+@import 'smart-template-header';
+@import 'smart-template';
+@import 'smart-template-landing';
+@import 'strategies';
+@import 'single-smart';
+@import 'human-body';
+@import 'objectives';

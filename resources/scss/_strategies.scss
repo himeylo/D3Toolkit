@@ -1,0 +1,54 @@
+/* Strategies (Bubbles)
+--------------------------------------------- */
+.strategy-relationships, .indicator-relationships, .tool-relationships {
+	.chart {
+		font-weight: 700;
+		
+		.label .text-box {
+			line-height: 1;
+			font-weight: 700;
+		}
+
+		.text-box p,
+		.text-box a {
+			font-family: 'Open Sans Condensed', 'open-sans-condensed', 'Roboto Condensed', sans-serif;
+
+			&.depth1 {
+				font-weight: 700;
+			}
+
+			&.depth2 {
+				font-weight: 700;
+			}
+		}
+
+		.text-box a {
+			@include media('>medium') {
+				text-decoration: underline;
+			}
+
+			&:active,
+			&:focus,
+			&:focus-within {
+				outline: none;
+			}
+		}
+	}
+
+
+	/* Supports chart visible overflow styles */
+	svg.chart {
+		overflow: visible;
+	}
+	.entry,
+	.chart-filters {
+		z-index: 1;
+		position: relative;
+	}
+
+	.chart-filters p.info {
+		@include header2Font(1.3rem, 400);
+		font-style: normal;
+	}
+
+}

@@ -1,0 +1,293 @@
+/*
+ *  Header and Navigation styles
+ *
+ */
+
+ 
+
+//* HEADER
+.smart-header {
+	background-color: $white;
+	background-image: url("/wp-content/plugins/d3js-circle-packing/resources/images/headerlines.svg");
+	background-repeat: repeat no-repeat;
+	background-size: contain;
+
+	.smart-header-inner {
+		position: relative;
+		display: flex;
+		width: 1280px;
+		margin-inline: auto;
+		margin-top: -10px;
+		max-width: 100%;
+		z-index: 1;
+	}
+	.title-area {
+		display: flex;
+		align-items: center; 
+		padding: 0;
+		margin-inline: 1.5rem;
+		margin-block: -20px;
+		width: auto;
+
+		a {
+			display: flex;
+			padding-top: 10px;
+
+			img {
+				width: 70px;
+				height: 70px;
+			}
+		}
+
+		.site-title,
+		.site-description {
+			display: none;
+			visibility: hidden;
+		}
+	}
+}
+
+.d3tool,
+.smart-single {
+	.smart-header {
+		.title-area {
+			padding-inline: 22px;
+
+			@include media('>fullwidth') {
+				padding-inline: 10px;
+			}
+		}
+	}
+	.breadcrumb {
+		padding: 0 20px;
+		@include contentWidth;
+
+		@include media('>large') {
+			// margin-top: -35px;
+		}
+
+	}
+}
+
+.smart-framework-landing {
+	.smart-header {
+		display: flex;
+		display: block;
+		opacity: 0;
+		position: fixed;
+		width: 100vw;
+		z-index: 1000;
+	}
+
+	.smart-header-inner {
+
+	}
+
+	.title-area {
+
+		a {
+			background-color: $white;
+			border-radius: 15px;
+			margin-inline: 0;
+			padding: 1.4em 0.8em 1em;
+		}
+	}
+}
+
+.smart-single .smart-header {
+	.smart-header-inner {
+		align-items: center;
+		justify-content: flex-start;
+	}
+}
+
+//* NAV
+
+button.menu-toggle {
+  display: none !important;
+  visibility: hidden;
+}
+
+.smart-single .single-smart-menu {
+	display: flex;
+	position: relative;
+	visibility: visible;
+	z-index: 1;
+
+	.genesis-nav-menu {
+		align-content: center;
+	}
+}
+
+.smart-single .smart-header  .smart-header-inner,
+.d3tool .smart-header-inner {
+	height: 100px;
+
+	.single-smart-menu {
+		align-self: center;
+	}
+}
+
+// .d3tool {
+// 	.smart-header-inner {
+// 		height: 100px;
+// 	}
+// }
+
+.smart-framework-landing .smart-menu {
+	display: flex;
+	align-items: flex-end;
+	margin-inline: 0.5em;
+		
+		@include media('>tablet') {
+			text-align: left;
+			visibility: visible;
+			width: 100%;
+		}
+
+		.genesis-nav-menu {
+			align-items: baseline;
+			display: flex;
+			gap: 1em;
+
+			@include media('>tablet') {
+				justify-content: center;
+			}
+
+			a {
+				padding: 0;
+			}
+
+			.menu-item {
+				text-align: center;
+				padding: 1em 2em 1.25em;
+				margin-block: -20px -16px;
+				// border-radius: 10px;
+
+				// &:has(a:hover) {
+				// 	background-color: $white;
+				// }
+
+				// &:has(a.active) {
+				// 	// background-color: $activeyellow;
+				// 	background-color: $green;
+				// 	padding: 1em 2em 1.25em;
+				// }
+
+				a {
+					border-bottom: 0;
+					color: $black;
+					display: flex;
+					flex-direction: column;
+					font-weight: 400;
+					font-size: 16px;
+					margin-bottom: -2em;
+					margin-top: 2em;
+					padding: 2em;
+					text-transform: uppercase;
+
+					&:hover {
+						background-color: $white;
+					}
+
+					&.active,
+					&:active {
+						color: #000;
+						background-color: $green;
+
+						span {
+							// display: block;
+							color: $black;
+							margin-bottom: initial;
+						}
+					}
+
+					span {
+						color: transparent;
+						// display: none;
+						font-size: 11px;
+						font-weight: 700;
+						margin-top: 4px;
+						margin-bottom: -1em;
+						// display: block;	
+					}
+
+					&:hover,
+					&:active,
+					&:focus {
+						text-decoration: none;
+						outline: 0;
+					}
+				}
+			}
+		}
+	}
+
+	.single-smart-menu .smart-menu {
+
+		.genesis-nav-menu {
+			display: flex;
+			flex-wrap: wrap;
+			// text-transform: uppercase;
+			gap: 0.25rem;
+		}
+	}
+
+// .smart-framework-landing .smart-menu,
+.single-smart-menu {
+
+		.genesis-nav-menu {
+			margin-top: 10px;
+			text-align: left;
+
+			li {
+
+				&.current-menu-item {
+					background: transparent;
+					color: $green;
+
+					&:hover {
+						color: $darkgreen;
+					}
+
+					a {
+						border-bottom: none;
+					}
+				}
+
+				a {
+					border-bottom: 0;
+					padding: 6px;
+					text-decoration: none;
+
+					&:active,
+					&.active {
+						color: $green;
+					}
+				}
+			}
+
+			a:focus, 
+			a:hover, 
+			.current-menu-item>a, 
+			.sub-menu .current-menu-item>a:hover {
+				color: $green;
+				text-decoration: none;
+			}
+		}
+
+		a {
+			text-decoration: none;
+
+			&:active,
+			&.active {
+				color: $darkgreen;
+			}
+
+			&:hover,
+			&:focus {
+				color: $black;
+				text-decoration: none;
+			}
+		}
+	}

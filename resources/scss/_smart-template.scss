@@ -1,0 +1,19 @@
+.smart-framework,
+.smart-single {
+
+  &:not(.d3tool) .site-inner {
+    @include contentWidth;
+  }
+
+  &.smart-framework-landing .site-inner {
+    @include slimContentWidth;
+  }
+  
+  h4 {
+    @include header2Font();
+
+    @include media('>tablet') {
+      @include header2Font(2rem);
+    }
+  }
+}
